@@ -354,3 +354,27 @@
 }
 
 /* end identity layer */
+
+/* === HERO PATTERN UNIQUENESS — appliance-repair-template === */
+.hero {
+  &::before {
+    content: '' !important;
+    position: absolute !important;
+    inset: 0 !important;
+    background-image: repeating-linear-gradient(90deg, transparent, transparent 40px, rgba($white, 0.02) 40px, rgba($white, 0.02) 41px) !important;
+    background-size: auto !important;
+    opacity: 0.91 !important;
+    pointer-events: none !important;
+    z-index: 0 !important;
+  }
+
+  &::after {
+    content: '' !important;
+    position: absolute !important;
+    inset: 0 !important;
+    background-image: radial-gradient(ellipse 50% 40% at 15% 26%, rgba($orange, 0.070), transparent 70%), radial-gradient(ellipse 40% 50% at 97% 96%, rgba($white, 0.03), transparent 65%) !important;
+    pointer-events: none !important;
+    z-index: 0 !important;
+  }
+}
+/* end hero pattern */
