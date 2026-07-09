@@ -35,36 +35,42 @@ export default function HomePage() {
       title: "Refrigerator Repair",
       body: "Not cooling, ice maker failures, leaks, and noisy compressors — same-day fridge repair for all major brands.",
       link: "/services/refrigerator-repair",
+      image: "/pages/home/services/service-1.jpg",
     },
     {
       icon: faShirt,
       title: "Washer & Dryer Repair",
       body: "No spin, no heat, leaks, and error codes. We fix front-load and top-load laundry pairs fast.",
       link: "/services/washer-dryer-repair",
+      image: "/pages/home/services/service-2.jpg",
     },
     {
       icon: faFireBurner,
       title: "Oven & Range Repair",
       body: "Gas and electric ovens and ranges that will not heat, ignite, or hold temperature.",
       link: "/services/oven-range-repair",
+      image: "/pages/home/services/service-3.jpg",
     },
     {
       icon: faSink,
       title: "Dishwasher Repair",
       body: "Standing water, poor wash quality, drainage issues, and loud pumps — restored clean results.",
       link: "/services/dishwasher-repair",
+      image: "/pages/home/services/service-4.jpg",
     },
     {
       icon: faMicrochip,
       title: "Microwave Repair",
       body: "No heat, turntable problems, and built-in / over-the-range microwave service.",
       link: "/services/microwave-repair",
+      image: "/pages/home/services/service-1.jpg",
     },
     {
       icon: faClipboardList,
       title: "Maintenance Plans",
       body: "Priority scheduling and seasonal checkups that reduce emergency breakdowns.",
       link: "/services/maintenance-plans",
+      image: "/pages/home/services/service-2.jpg",
     },
   ];
 
@@ -155,23 +161,25 @@ export default function HomePage() {
           cards={services}
         />
       </div>
-      <div className={styles.section}><WhatToExpect expectations={expectations} /></div>
+      <div className={styles.section}><Testimonials testimonials={reviews} /></div>
       <div className={styles.section}><ImpactMetrics metrics={metrics} cityName="Waco" /></div>
       <div className={styles.section}><WhyChooseUs cityName="Waco" features={whyFeatures} /></div>
       <div className={styles.section}><ProcessTimeline steps={processSteps} /></div>
       <div className={styles.section}><GuaranteeSection /></div>
-      <div className={styles.section}><Testimonials testimonials={reviews} /></div>
-      <div className={styles.section}><LocalServiceAreas cityName="Waco" areas={localAreas} /></div>
-      <div className={styles.section}><FAQ cityName="Waco" faq={faq} /></div>
-      <div className={styles.section}><BlogPreviewGrid /></div>
       <CTABanner
-        headline="Need Appliance Repair Today?"
-        subline="Same-day service available. Upfront pricing. Factory-trained techs. Call (254) 790-8800."
+        headline="Appliance Down? We Fix It Fast."
+        subline="Same-day diagnosis across Central Texas. Flat-rate repairs, OEM-grade parts, and a clear warranty on every job."
         primaryText="Call (254) 790-8800"
         primaryLink="tel:+12547908800"
-        secondaryText="Book Online"
+        secondaryText="Book Repair"
         secondaryLink="/contact"
-      />
+      
+        imageSrc="/pages/home/welcome/hero-main.jpg"
+       />
+      <div className={styles.section}><LocalServiceAreas cityName="Waco" areas={localAreas} /></div>
+      <div className={styles.section}><WhatToExpect expectations={expectations} /></div>
+      <div className={styles.section}><FAQ cityName="Waco" faq={faq} /></div>
+      <div className={styles.section}><BlogPreviewGrid /></div>
       <div className={styles.section}>
         <Variant4 title="Request Service" cityName="Waco" slug="home" spot="home-form" formVariant={1} />
       </div>

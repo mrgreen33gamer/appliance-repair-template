@@ -19,7 +19,7 @@ const ALL_POSTS: BlogPost[] = [
     category: 'Guides',
     date:     'July 3, 2026',
     readTime: 7,
-    imageSrc: '/pages/blogs/energy-savings.jpg',
+    imageSrc: '/pages/home/welcome/after.jpg',
     imageAlt: 'Refrigerator not cooling checklist for Waco TX homeowners',
     featured: true,
   },
@@ -30,7 +30,7 @@ const ALL_POSTS: BlogPost[] = [
     category: 'Guides',
     date:     'June 24, 2026',
     readTime: 6,
-    imageSrc: '/pages/blogs/seer-rating.jpg',
+    imageSrc: '/pages/home/welcome/before.jpg',
     imageAlt: 'When to repair vs replace appliances in Central Texas',
   },
   {
@@ -40,7 +40,7 @@ const ALL_POSTS: BlogPost[] = [
     category: 'Service',
     date:     'June 15, 2026',
     readTime: 5,
-    imageSrc: '/pages/blogs/ac-replacement.jpg',
+    imageSrc: '/pages/home/welcome/hero-main.jpg',
     imageAlt: 'Same-day appliance repair service in Waco TX',
   },
 ];
