@@ -11,7 +11,7 @@ import ReCAPTCHA from 'react-google-recaptcha';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCircleCheck, faExclamationTriangle, faArrowRight, faArrowLeft,
-  faFan, faFire, faWrench, faFilter, faThermometerHalf, faWind, faBolt,
+  faSnowflake, faShirt, faFireBurner, faSink, faMicrochip, faClipboardList, faBolt, faWrench,
 } from '@fortawesome/free-solid-svg-icons';
 import { motion, AnimatePresence } from 'framer-motion';
 import { getJourneyContext } from '&/useJourneyTracker';
@@ -22,13 +22,12 @@ interface Variant4Props {
 }
 
 const SERVICES = [
-  { icon: faFan,             label: 'AC Repair',        sub: 'System not cooling, strange noises' },
-  { icon: faFire,            label: 'Heating / Furnace', sub: 'Heat not working, furnace issues' },
-  { icon: faWrench,          label: 'New Installation',  sub: 'Replace or add a new system' },
-  { icon: faFilter,          label: 'Duct Cleaning',     sub: 'Improve airflow & air quality' },
-  { icon: faThermometerHalf, label: 'Maintenance',       sub: 'Tune-up, inspection, seasonal' },
-  { icon: faWind,            label: 'Air Quality',       sub: 'Filters, purifiers, humidity' },
-  { icon: faBolt,            label: 'Emergency',         sub: 'System down, urgent repair needed' },
+  { icon: faSnowflake,     label: 'Refrigerator Repair',  sub: 'Not cooling, ice maker, leaks' },
+  { icon: faShirt,         label: 'Washer & Dryer Repair', sub: 'No spin, no heat, leaks' },
+  { icon: faFireBurner,    label: 'Oven & Range Repair',   sub: 'No heat, ignition, controls' },
+  { icon: faSink,          label: 'Dishwasher Repair',     sub: 'Not draining, poor wash' },
+  { icon: faMicrochip,     label: 'Microwave Repair',      sub: 'No heat, built-in / OTR' },
+  { icon: faClipboardList, label: 'Maintenance Plans',     sub: 'Priority service plans' },
 ];
 
 const BUDGET_LABELS = ['Under $500', '$500–$1,500', '$1,500–$5,000', '$5,000–$10,000', '$10,000+'];
@@ -143,7 +142,7 @@ export default function Variant4({ title, cityName, slug, spot, formVariant }: V
                   </div>
                   <h3 className={styles.successTitle}>You're All Set!</h3>
                   <p className={styles.successText}>
-                    A licensed Arctic Air tech will reach out about your <strong>{selectedService}</strong> service.
+                    A FixFirst specialist will reach out about your <strong>{selectedService}</strong> service.
                   </p>
                   <div className={styles.successSummary}>
                     <div className={styles.summaryRow}><span>Service</span><span>{selectedService}</span></div>

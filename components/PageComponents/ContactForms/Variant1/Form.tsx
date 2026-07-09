@@ -27,7 +27,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCircleCheck, faExclamationTriangle, faArrowRight,
   faPhone, faStar, faShieldHalved, faClock, faTag,
-  faFan, faFire, faWrench, faFilter, faThermometerHalf, faWind, faBolt,
+  faSnowflake, faShirt, faFireBurner, faSink, faMicrochip, faClipboardList, faBolt, faWrench,
 } from '@fortawesome/free-solid-svg-icons';
 import { motion, AnimatePresence } from 'framer-motion';
 import { getJourneyContext } from '&/useJourneyTracker';
@@ -38,21 +38,21 @@ interface Variant1Props {
 }
 
 const SERVICES = [
-  { icon: faFan,             label: 'AC Repair' },
-  { icon: faFire,            label: 'Heating / Furnace' },
-  { icon: faWrench,          label: 'New Installation' },
-  { icon: faFilter,          label: 'Duct Cleaning' },
-  { icon: faThermometerHalf, label: 'Maintenance' },
-  { icon: faWind,            label: 'Air Quality' },
-  { icon: faBolt,            label: 'Emergency' },
+  { icon: faSnowflake,       label: 'Refrigerator Repair' },
+  { icon: faShirt,           label: 'Washer & Dryer Repair' },
+  { icon: faFireBurner,      label: 'Oven & Range Repair' },
+  { icon: faSink,            label: 'Dishwasher Repair' },
+  { icon: faMicrochip,       label: 'Microwave Repair' },
+  { icon: faClipboardList,   label: 'Maintenance Plans' },
+  { icon: faBolt,            label: 'Other / Not Sure' },
 ];
 
 // Compact trust chips (replaces standalone .trustStrip block)
 const TRUST_CHIPS = [
   { icon: faClock,        text: 'Same-day available' },
   { icon: faTag,          text: 'Flat-rate pricing' },
-  { icon: faShieldHalved, text: 'NATE · TDLR' },
-  { icon: faStar,         text: '4.9★ · 300+ reviews' },
+  { icon: faShieldHalved, text: 'Factory-Trained · Insured' },
+  { icon: faStar,         text: '4.9★ · 1,500+ reviews' },
 ];
 
 export default function Variant1({ title, cityName, slug, spot, formVariant }: Variant1Props) {
@@ -105,7 +105,7 @@ export default function Variant1({ title, cityName, slug, spot, formVariant }: V
           <span className={styles.eyebrow}>Free Estimate · No Obligation</span>
           <h2 className={styles.title}>{title}</h2>
           <p className={styles.subtitle}>
-            Tell us what's going on and we'll have a licensed tech reach out — <strong>flat-rate quote, no pressure</strong>.
+            Tell us what's going on and we'll have a licensed tech reach out — <strong>upfront quote, no pressure</strong>.
           </p>
 
           {/* Inline trust chips (was a standalone .trustStrip block — merged here to save vertical space) */}
@@ -133,7 +133,7 @@ export default function Variant1({ title, cityName, slug, spot, formVariant }: V
                 </div>
                 <h3 className={styles.successTitle}>Request Received!</h3>
                 <p className={styles.successText}>
-                  A licensed Arctic Air technician will reach out shortly. Keep an eye on your inbox and phone.
+                  A FixFirst specialistnician will reach out shortly. Keep an eye on your inbox and phone.
                 </p>
                 <div className={styles.successBadges}>
                   <span>✓ Flat-rate quote</span>
@@ -206,9 +206,9 @@ export default function Variant1({ title, cityName, slug, spot, formVariant }: V
                     <div className={styles.altContact}>
                       <FontAwesomeIcon icon={faPhone} />
                       <span>Need help now?{' '}
-                        <a href="tel:+12549001234"
-                          onClick={() => trackEvent({ eventType: 'phone_click', elementLabel: 'Call (254) 900-1234', section: 'ContactForm-V1' })}>
-                          Call (254) 900-1234
+                        <a href="tel:+12547908800"
+                          onClick={() => trackEvent({ eventType: 'phone_click', elementLabel: 'Call (254) 790-8800', section: 'ContactForm-V1' })}>
+                          Call (254) 790-8800
                         </a>
                       </span>
                     </div>

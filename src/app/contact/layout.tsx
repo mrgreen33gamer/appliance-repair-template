@@ -1,35 +1,35 @@
 // src/app/contact/layout.tsx
 import type { Metadata } from 'next';
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://hvac-pro-template.vercel.app';
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.fixfirstappliance.com';
 const url = `${BASE_URL}/contact`;
 
 export const metadata: Metadata = {
-  title: 'Contact Arctic Air HVAC | Schedule Service in Waco & Central Texas',
+  title: 'Contact FixFirst Appliance Repair | Schedule Service in Waco & Central Texas',
   description:
-    'Contact Arctic Air HVAC to schedule AC repair, heating service, or a free estimate. Serving Waco, Hewitt, Killeen, Temple, and all of Central Texas. Call (254) 900-1234.',
+    'Contact FixFirst Appliance Repair to schedule appliance repair, panel upgrades, or a free estimate. Serving Waco, Hewitt, Killeen, Temple, and all of Central Texas. Call (254) 790-8800.',
   keywords: [
-    'contact Arctic Air HVAC',
-    'HVAC service Waco TX',
-    'schedule AC repair Waco',
-    'HVAC estimate Central Texas',
-    'Arctic Air contact',
-    '254-900-1234',
+    'contact FixFirst Appliance Repair',
+    'appliance service Waco TX',
+    'schedule appliance repair Waco',
+    'appliance estimate Central Texas',
+    'FixFirst contact',
+    '254-740-3300',
   ],
   alternates: { canonical: url },
   openGraph: {
-    title: 'Contact Arctic Air HVAC | Schedule Service in Waco & Central Texas',
+    title: 'Contact FixFirst Appliance Repair | Schedule Service in Waco & Central Texas',
     description:
-      'Call, text, or submit a request. Same-day service available. Flat-rate pricing, 1-year warranty, NATE-certified techs.',
+      'Call, text, or submit a request. Same-day service available. Upfront pricing, 90-Day Repair Warranty, factory-trained techs.',
     url,
-    siteName: 'Arctic Air HVAC',
+    siteName: 'FixFirst Appliance Repair',
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Contact Arctic Air HVAC | Waco & Central Texas',
-    description: 'Schedule HVAC service or get a free estimate. Call (254) 900-1234.',
+    title: 'Contact FixFirst Appliance Repair | Waco & Central Texas',
+    description: 'Schedule appliance service or get a free estimate. Call (254) 790-8800.',
   },
 };
 

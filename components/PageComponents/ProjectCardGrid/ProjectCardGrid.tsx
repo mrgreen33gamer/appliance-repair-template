@@ -42,7 +42,7 @@ const SERVICE_CTAS = [
     eyebrow: 'Web Design',
     headline: 'Need a website that ranks and converts?',
     body: 'Fast, mobile-first sites built for Central Texas businesses. Fixed price, you own everything.',
-    cta: 'Get a Free Quote',
+    cta: 'Book a Repair',
     href: '/contact',
     accent: 'green' as const,
   },
@@ -98,13 +98,13 @@ const cardVariants = {
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 /**
  * Convert a filename like "hot-rocks-logo-design.jpg"
- * → "Hot Rocks Logo Design — Scott Applications Graphic Design Portfolio"
+ * → "Hot Rocks Logo Design — FixFirst Appliance Repair Graphic Design Portfolio"
  */
 function fileToAlt(filename: string): string {
   const stem = filename.replace(/\.[^.]+$/, '');           // strip extension
   const words = stem.replace(/[-_]/g, ' ')                 // dashes → spaces
     .replace(/\b\w/g, (c) => c.toUpperCase());             // title case
-  return `${words} — Scott Applications Graphic Design Portfolio`;
+  return `${words} — FixFirst Appliance Repair Graphic Design Portfolio`;
 }
 
 // ─── Image Carousel ───────────────────────────────────────────────────────────

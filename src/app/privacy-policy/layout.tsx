@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy – Scott Applications",
-  description: "How we collect, use, and protect your information at Scott Applications in Waco, TX.",
+  title: "Privacy Policy – FixFirst Appliance Repair",
+  description: "How we collect, use, and protect your information at FixFirst Appliance Repair in Waco, TX.",
   robots: {
     index: false,
     follow: false,

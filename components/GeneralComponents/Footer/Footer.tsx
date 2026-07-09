@@ -1,9 +1,9 @@
-"use client";
+﻿"use client";
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLocationDot, faPhone, faEnvelope,
-  faShieldHalved, faWrench, faClock, faSnowflake,
+  faShieldHalved, faWrench, faClock, faStar,
 } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faGoogle } from '@fortawesome/free-brands-svg-icons';
 import styles from './styles.module.scss';
@@ -14,35 +14,35 @@ const NAV_LINKS = [
   { href: '/services',       label: 'Services' },
   { href: '/about',          label: 'About' },
   { href: '/blogs',          label: 'Blog' },
-  { href: '/contact',        label: 'Get a Quote' },
+  { href: '/contact',        label: 'Book Repair' },
   { href: '/privacy-policy', label: 'Privacy Policy' },
 ];
 
 const SERVICE_LINKS = [
-  { href: '/services/ac-repair',          label: 'AC Repair' },
-  { href: '/services/heating',            label: 'Heating Service' },
-  { href: '/services/installation',       label: 'New Installation' },
-  { href: '/services/maintenance',        label: 'Maintenance Plans' },
-  { href: '/services/duct-cleaning',      label: 'Duct Cleaning' },
-  { href: '/services/indoor-air-quality', label: 'Indoor Air Quality' },
+  { href: '/services/refrigerator-repair', label: 'Refrigerator Repair' },
+  { href: '/services/washer-dryer-repair',  label: 'Washer & Dryer Repair' },
+  { href: '/services/oven-range-repair',    label: 'Oven & Range Repair' },
+  { href: '/services/dishwasher-repair',    label: 'Dishwasher Repair' },
+  { href: '/services/microwave-repair',     label: 'Microwave Repair' },
+  { href: '/services/maintenance-plans',    label: 'Maintenance Plans' },
 ];
 
 const LOCAL_AREAS = [
   'Waco, TX', 'Hewitt, TX', 'Woodway, TX',
-  'Robinson, TX', 'China Spring, TX', 'Temple, TX',
-  'Killeen, TX', 'Hillsboro, TX',
+  'McGregor, TX', 'China Spring, TX', 'Temple, TX',
+  'Killeen, TX', 'Bellmead, TX',
 ];
 
 const TRUST_ITEMS = [
-  { icon: faShieldHalved, label: 'Licensed & Insured' },
-  { icon: faWrench,       label: 'NATE Certified' },
+  { icon: faShieldHalved, label: 'Bonded & Insured' },
+  { icon: faWrench,       label: 'Factory-Trained' },
   { icon: faClock,        label: 'Same-Day Service' },
-  { icon: faSnowflake,    label: '1-Yr Warranty' },
+  { icon: faStar,         label: '90-Day Warranty' },
 ];
 
 const SOCIALS = [
-  { href: 'https://facebook.com/arcticairhvac', icon: faFacebookF, label: 'Facebook' },
-  { href: 'https://g.page/r/arcticairhvac',     icon: faGoogle,    label: 'Google' },
+  { href: 'https://facebook.com/fixfirstappliance', icon: faFacebookF, label: 'Facebook' },
+  { href: 'https://g.page/r/fixfirstappliance',     icon: faGoogle,    label: 'Google' },
 ];
 
 export default function Footer() {
@@ -51,7 +51,6 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
 
-      {/* ── TRUST STRIP ── */}
       <div className={styles.trustStrip}>
         <div className={styles.trustInner}>
           {TRUST_ITEMS.map(({ icon, label }) => (
@@ -65,52 +64,45 @@ export default function Footer() {
             className={styles.trustCta}
             onClick={() => trackEvent({ eventType: 'click', elementLabel: 'Book Now', section: 'Footer-Trust' })}
           >
-            Book a Tech Today →
+            Book a Repair →
           </Link>
         </div>
       </div>
 
-      {/* ── MAIN BODY ── */}
       <div className={styles.body}>
         <div className={styles.inner}>
 
-          {/* Col 1 — Brand */}
           <div className={styles.brandCol}>
             <Link href="/" className={styles.logo}>
               <span className={styles.logoMark}>
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="12" y1="2" x2="12" y2="22"/>
-                  <line x1="2" y1="12" x2="22" y2="12"/>
-                  <polyline points="8 6 12 2 16 6"/>
-                  <polyline points="8 18 12 22 16 18"/>
-                  <polyline points="6 8 2 12 6 16"/>
-                  <polyline points="18 8 22 12 18 16"/>
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
                 </svg>
               </span>
               <div className={styles.logoText}>
-                <span className={styles.logoName}>Arctic Air HVAC</span>
+                <span className={styles.logoName}>FixFirst</span>
                 <span className={styles.logoSub}>Waco, Texas</span>
               </div>
             </Link>
 
             <p className={styles.tagline}>
-              Flat-rate pricing. Same-day service. Zero contracts — ever. Serving Central Texas homeowners since 2010.
+              Same-day appliance repair for all major brands. Upfront pricing. 90-day repair warranty. Serving Central Texas since 2010.
             </p>
 
             <div className={styles.contactBlock}>
-              <a href="tel:+12549001234" className={styles.phoneLink}
+              <a href="tel:+12547908800" className={styles.phoneLink}
                 onClick={() => trackEvent({ eventType: 'phone_click', elementLabel: 'Footer Phone', section: 'Footer-Brand' })}>
                 <FontAwesomeIcon icon={faPhone} />
-                (254) 900-1234
+                (254) 790-8800
               </a>
-              <a href="mailto:contact@arcticairhvac.com" className={styles.emailLink}
+              <a href="mailto:hello@fixfirstappliance.com" className={styles.emailLink}
                 onClick={() => trackEvent({ eventType: 'email_click', elementLabel: 'Footer Email', section: 'Footer-Brand' })}>
                 <FontAwesomeIcon icon={faEnvelope} />
-                contact@arcticairhvac.com
+                hello@fixfirstappliance.com
               </a>
               <span className={styles.addressLine}>
                 <FontAwesomeIcon icon={faLocationDot} />
-                4521 Bosque Blvd, Waco, TX 76710
+                2412 Franklin Ave, Waco, TX 76701
               </span>
             </div>
 
@@ -125,7 +117,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Col 2 — Nav */}
           <div className={styles.col}>
             <span className={styles.colHead}>Company</span>
             <ul className={styles.linkList}>
@@ -140,7 +131,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 3 — Services */}
           <div className={styles.col}>
             <span className={styles.colHead}>Our Services</span>
             <ul className={styles.linkList}>
@@ -155,7 +145,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 4 — Service Areas */}
           <div className={styles.col}>
             <span className={styles.colHead}>Service Areas</span>
             <ul className={styles.areaList}>
@@ -172,13 +161,12 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* ── BOTTOM BAR ── */}
       <div className={styles.bottomBar}>
         <div className={styles.bottomInner}>
           <p className={styles.copyright}>
-            &copy; {new Date().getFullYear()} Arctic Air HVAC. All Rights Reserved. | TDLR License #XXXXXXXX
+            &copy; {new Date().getFullYear()} FixFirst Appliance Repair. All Rights Reserved. | Factory-Trained · Bonded & Insured
           </p>
-          <a href="tel:+12549001234" className={styles.emergencyBtn}
+          <a href="tel:+12547908800" className={styles.emergencyBtn}
             onClick={() => trackEvent({ eventType: 'phone_click', elementLabel: '24/7 Emergency', section: 'Footer-Bottom' })}>
             <span className={styles.emergencyDot} />
             24/7 Emergency Line
