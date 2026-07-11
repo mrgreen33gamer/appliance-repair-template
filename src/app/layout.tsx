@@ -118,7 +118,7 @@ export const metadata: Metadata = {
     siteName: "FixFirst Appliance Repair",
     images: [
       {
-        url: `${BASE_URL}/logos/scott-apps-banner.png?v=1`,
+        url: `${BASE_URL}/pages/home/welcome/hero-main.jpg`,
         width: 1200,
         height: 630,
         alt: "FixFirst Appliance Repair — Waco TX Appliance Repair",
@@ -132,7 +132,7 @@ export const metadata: Metadata = {
     title: "FixFirst Appliance Repair | Waco TX Appliance Repair",
     description:
       "Same-day appliance repair for all major brands in Central Texas. Factory-trained techs — bonded & insured.",
-    images: [`${BASE_URL}/logos/scott-apps-banner.png?v=1`],
+    images: [`${BASE_URL}/pages/home/welcome/hero-main.jpg`],
   },
   robots: {
     index: true,

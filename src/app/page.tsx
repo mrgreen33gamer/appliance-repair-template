@@ -63,14 +63,14 @@ export default function HomePage() {
       title: "Microwave Repair",
       body: "No heat, turntable problems, and built-in / over-the-range microwave service.",
       link: "/services/microwave-repair",
-      image: "/pages/home/services/service-1.jpg",
+      image: "/pages/home/welcome/before.jpg",
     },
     {
       icon: faClipboardList,
       title: "Maintenance Plans",
       body: "Priority scheduling and seasonal checkups that reduce emergency breakdowns.",
       link: "/services/maintenance-plans",
-      image: "/pages/home/services/service-2.jpg",
+      image: "/pages/home/welcome/after.jpg",
     },
   ];
 

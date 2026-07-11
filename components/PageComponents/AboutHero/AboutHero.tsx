@@ -68,7 +68,7 @@ const AboutHero: React.FC<AboutHeroProps> = ({ cityName }) => {
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
               </svg>
-              90-Day Warranty Warranty
+              90-Day Warranty
             </span>
           </div>
         </motion.div>
@@ -83,7 +83,7 @@ const AboutHero: React.FC<AboutHeroProps> = ({ cityName }) => {
           <div className={styles.imageFrame}>
             <div className={styles.imageWrapper}>
               <Image
-                src="/pages/about/about-hero.jpg"
+                src="/pages/home/welcome/hero-main.jpg"
                 alt="FixFirst Appliance Repair — Waco, Texas technicians"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
