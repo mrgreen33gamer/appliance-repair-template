@@ -5,7 +5,7 @@
 // with an authentic appliance-repair photo card (see design pattern piloted
 // on the HVAC template's WelcomePage). Real imagery lives in
 // /public/pages/home/welcome — hero-parallax-bg.jpg (background scene) and
-// hero-tech-card.jpg (foreground technician card).
+// hero-appliance-tech.jpg (foreground technician card).
 'use client';
 import React, { useRef } from 'react';
 import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
@@ -141,8 +141,8 @@ export default function WelcomePage() {
         >
           <div className={styles.photoCard}>
             <Image
-              src="/pages/home/welcome/hero-tech-card.jpg"
-              alt="FixFirst Appliance Repair technician diagnosing a home appliance control panel in Waco, TX"
+              src="/pages/home/welcome/hero-appliance-tech.jpg"
+              alt="FixFirst Appliance Repair technician using a precision screwdriver to service a home appliance component at a kitchen worktable in Waco, TX"
               fill
               priority
               sizes="(max-width: 960px) 88vw, 460px"
